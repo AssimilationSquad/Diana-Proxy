@@ -22,6 +22,10 @@ app.get('/similar/rooms/:id', (req, res) => {
   req.pipe(request(`http://localhost:3003/similar/rooms/${req.params.id}`)).pipe(res);
 });
 
+app.get('/api/rooms/:id', (req, res) => {
+  req.pipe(request(`http://localhost:3004/api/rooms/${req.params.id}`)).pipe(res);
+})
+
 app.listen(port, () => {
   console.log(`listening on port ${port}`);
 });

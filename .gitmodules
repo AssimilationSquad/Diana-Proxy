@@ -1,3 +1,6 @@
 [submodule "components/DJ-Carouselception"]
 	path = components/DJ-Carouselception
 	url = https://github.com/AssimilationSquad/DJ-Carouselception.git
+[submodule "components/vq-carousel"]
+	path = components/vq-carousel
+	url = https://github.com/AssimilationSquad/vq-carousel.git
