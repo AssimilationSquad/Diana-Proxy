@@ -1,0 +1,30 @@
+{
+  "name": "diana-proxy",
+  "version": "1.0.0",
+  "description": "LairBnB put together",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AssimilationSquad/Diana-Proxy.git"
+  },
+  "keywords": [
+    "lairbnb",
+    "proxy"
+  ],
+  "author": "kestrad",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/AssimilationSquad/Diana-Proxy/issues"
+  },
+  "homepage": "https://github.com/AssimilationSquad/Diana-Proxy#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6"
+  }
+}
