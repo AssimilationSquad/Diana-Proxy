@@ -26,6 +26,14 @@ app.get('/api/rooms/:id', (req, res) => {
   req.pipe(request(`http://localhost:3004/api/rooms/${req.params.id}`)).pipe(res);
 })
 
+app.get('/rooms/:homeid/reviews', (req, res) => {
+  req.pipe(request(`http://localhost:3002/rooms/${req.params.homeid}/reviews`)).pipe(res);
+})
+
+app.patch('/rooms/:homeid/reviews/:reviewid', (req, res) => {
+  req.pipe(request(`http://localhost:3002/rooms/${req.params.homeid}/reviews/${req.params.reviewid}`))
+})
+
 app.listen(port, () => {
   console.log(`listening on port ${port}`);
 });

@@ -4,3 +4,6 @@
 [submodule "components/vq-carousel"]
 	path = components/vq-carousel
 	url = https://github.com/AssimilationSquad/vq-carousel.git
+[submodule "components/YJ-review-component"]
+	path = components/YJ-review-component
+	url = https://github.com/AssimilationSquad/YJ-review-component.git
