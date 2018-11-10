@@ -1,18 +1,47 @@
+<!DOCTYPE HTML>
+
 <html>
   <head>
     <title>LairBnB</title>
     <script src="react.development.js"></script>
     <script src="react-dom.development.js"></script>
+    <style>
+      #topbar img {
+        width: 100%;
+      }
+      #content {
+        margin-left: 5%;
+        margin-top: 20px;
+        width: 95%;
+        overflow: auto;
+      }
+      #info {
+        float: left;
+        width: 50%;
+      }
+      #info img {
+        width: 100%;
+      }
+      #book {
+        float: right;
+        margin-right: 5%;
+      }
+    </style>
   </head>
 
   <body>
+    <div id="topbar"><img src="https://s3-us-west-1.amazonaws.com/dj-fec/topbar.png"></div>
     <div id="carousel"></div>
-    <div id="book"></div>
+    <div id="content">
+      <div id="info"><img src="https://s3-us-west-1.amazonaws.com/dj-fec/info.png"></div>
+      <div id="book"></div>
+    </div>
     <div id="reviews_component"></div>
     <div id="similar"></div>
     <script src="https://s3-us-west-1.amazonaws.com/lairbnb-carousel/bundle.js"></script>
     <script src="https://s3-us-west-1.amazonaws.com/reviews-hr104-lairbnb/bundle.js"></script>
     <script src="https://s3-us-west-1.amazonaws.com/dj-fec/bundle.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/lairbnb-book/bundle.js"></script>
     <script>
       ReactDOM.render(
         React.createElement(Grid),
@@ -21,6 +50,10 @@
       ReactDOM.render(
         React.createElement(Similar),
         document.getElementById('similar')
+      );
+      ReactDOM.render(
+        React.createElement(Book),
+        document.getElementById('book')
       );
     </script>
   </body>
